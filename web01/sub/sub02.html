@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>边框，内外边距，圆角</title>
   <style>
-    body{
+    body {
       margin: 0px;
       padding: 0px;
     }
 
     /* 边框 */
-    .border01{
+    .border01 {
       /* 
       第一个参数是边框的宽度 
       第二个参数是边框的线条类型 solid是单线条
@@ -21,7 +22,7 @@
       border: 1px solid #ff0000;
     }
 
-    .border02{
+    .border02 {
       /* 边框的复杂分部写法 width: 宽，color: 颜色，style: 线型
       */
       border-width: 2px;
@@ -29,14 +30,14 @@
       border-style: dashed;
     }
 
-    .border03{
+    .border03 {
       /* 上边距 top right bottom left */
       border-top: 1px dotted #00ff00;
       /* 下边距 */
       border-bottom: 1px solid #0000ff;
     }
 
-    .border04{
+    .border04 {
       /* 边距和内间距*/
       border: 1px solid #ff0000;
       padding: 0.5rem;
@@ -67,6 +68,7 @@
       justify-content: center;
       align-items: center;
     }
+
     /* 外边距，表示和元素外部的元素分开*/
     .margin01 {
       /* top right bottom left */
@@ -74,7 +76,17 @@
     }
   </style>
 </head>
+
 <body>
+  <!--
+     自己姓名的拼音小写
+    文件不能超过10mb，图片最好是1mb
+    目录里面不能有视频和音频
+    首页必须是index.html
+    所有的文件名和目录只能是字母和数字
+    
+-->
+
   <!-- 边框 -->
   <section class="border01">
     基本的边框
@@ -118,6 +130,7 @@
     <div class="border01 margin01">第二个</div>
 
   </section>
-  
+
 </body>
+
 </html>

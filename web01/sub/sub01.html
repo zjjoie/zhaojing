@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一个简单的综合页面</title>
+  <style>
+    /*去掉body的默认边距*/
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /*头部返回菜单的样式*/
+    .tou{
+      background-color: #c2185b;
+      text-align: right;
+      /*
+       内边距 里面的元素分开一定的距离 padding 
+       四个值分别对应到上右下左四个边距
+       */
+       padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+    .tou-a {
+      /*头部超链接样式*/
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /*网站标题样式*/
+    .title{
+      background-color: #e91e63;
+      color: #ffffff;
+      font-size: 2rem;
+      text-align: center;
+      /* padding可以简写成两个参数，分别代表上下和左右 */
+      padding: 1rem 1rem;
+    }
+
+    /* 标题突出显示文本 */
+    .title-text {
+      font-size: 1.2em;
+      color: #f8bbd0;
+    }
+
+    /* 简介的样式 */
+    .info{
+      background-color: #e91e63;
+      font-size: 1rem;
+      color: #bdbdbdbd;
+      text-align: center;
+      /* padding最后一种简写，一个参数，表示上右下左全都一个样 */
+      padding: 0.5rem;
+    }
+
+    /* 调整视频播放界面大小 */
+    .mv {
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <!--头部，返回首页的超链接-->
+  <header class="tou">
+    <a class="tou-a" href="index.html">返回</a>
+    
+  </header>
+
+  <!--网站的标题 -->
+  <section class="title">
+    <span class="title-text">黑暗骑士</span>的网站
+  </section>
+
+  <!-- 简介 -->
+  <section class="info">
+      我是程序猿，我靠写代码吃饭。有人说我是修电脑的，也有人说我是码农。 其实没人知道，
+      程序猿不好当。这是我的事业，并不是我的全世界。
+  </section>
+
+  <hr>
+  <!-- 页面嵌入音频和视频 -->
+  <!--
+    audio 音频
+    src是音频文件地址
+    controls 表示出现音频播放的控制界面
+    autoplay 表示音乐会自动播放（谷歌禁用了该功能，必须用户操作后才行）
+    loop 表示音乐循环播放
+  -->
+  <audio controls loop src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=14&tbOssInfo.obid=1"></audio>
+
+  <!---
+   video 视频 21 guns
+   src是视频文件地址
+   controls 是播放控制界面
+  -->
+  <video class="mv" controls src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=7&tbOssInfo.obid=1"></video>
+
+
+
+  
+</body>
+</html>
